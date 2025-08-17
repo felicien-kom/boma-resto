@@ -30,8 +30,8 @@ function Hero() {
                     {data.moto}
                 </p>
                 <div className="call-to-action">
-                    <Button svg={svgFood} msg={data.discoverText} className="btn-discover" />
-                    <Button svg={svgCall} msg={data.bookText} className="btn-book" />
+                    <Button svg={svgFood} msg={data.discoverText} className="btn-discover" sectionTarget="menu-section" />
+                    <Button svg={svgCall} msg={data.bookText} className="btn-book" sectionTarget="contact-section" />
                 </div>
                 <div className="indicate-down">
                     {svgDown}
