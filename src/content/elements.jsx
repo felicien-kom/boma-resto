@@ -658,108 +658,6 @@ const svgMenu = (
         <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
     </svg>
 );
-const menuList = [
-  {
-    img: "ndole.jpg",
-    title: { FR: "Ndolè", EN: "Ndolé" },
-    price: 2500,
-    description: {
-      FR: "Plat riche aux arachides et aux épinards",
-      EN: "Rich dish with peanuts and spinach"
-    },
-    category: "MAIN",
-    speciality: true
-  },
-  {
-    img: "poulet-dg.jpg",
-    title: { FR: "Poulet DG", EN: "DG Chicken" },
-    price: 3000,
-    description: {
-      FR: "Poulet aux légumes et plantains frits",
-      EN: "Chicken with vegetables and fried plantains"
-    },
-    category: "MAIN",
-    speciality: true
-  },
-  {
-    img: "eru.jpg",
-    title: { FR: "Eru", EN: "Eru" },
-    price: 2800,
-    description: {
-      FR: "Soupe traditionnelle aux feuilles d'eru",
-      EN: "Traditional soup with eru leaves"
-    },
-    category: "MAIN",
-    speciality: false
-  },
-  {
-    img: "beignets.jpg",
-    title: { FR: "Beignets Haricots", EN: "Bean Fritters" },
-    price: 500,
-    description: {
-      FR: "Beignets croustillants aux haricots",
-      EN: "Crispy bean fritters"
-    },
-    category: "STARTER",
-    speciality: false
-  },
-  {
-    img: "brochettes.jpg",
-    title: { FR: "Brochettes de Boeuf", EN: "Beef Skewers" },
-    price: 1800,
-    description: {
-      FR: "Brochettes grillées aux épices locales",
-      EN: "Grilled skewers with local spices"
-    },
-    category: "MAIN",
-    speciality: false
-  },
-  {
-    img: "plantains.jpg",
-    title: { FR: "Plantain Frit", EN: "Fried Plantains" },
-    price: 800,
-    description: {
-      FR: "Plantains dorés et croustillants",
-      EN: "Golden and crispy plantains"
-    },
-    category: "STARTER",
-    speciality: false
-  },
-  {
-    img: "gateau-banane.jpg",
-    title: { FR: "Gâteau à la Banane", EN: "Banana Cake" },
-    price: 1000,
-    description: {
-      FR: "Gâteau moelleux aux bananes locales",
-      EN: "Soft cake with local bananas"
-    },
-    category: "DESSERT",
-    speciality: false
-  },
-  {
-    img: "bissap.jpg",
-    title: { FR: "Bissap Frais", EN: "Fresh Bissap" },
-    price: 600,
-    description: {
-      FR: "Boisson rafraîchissante à l'hibiscus",
-      EN: "Refreshing hibiscus drink"
-    },
-    category: "DESSERT",
-    speciality: false
-  },
-  {
-    img: "koki.jpg",
-    title: { FR: "Koki", EN: "Koki" },
-    price: 1500,
-    description: {
-      FR: "Gâteau de haricots cuit à la vapeur",
-      EN: "Steamed bean cake"
-    },
-    category: "MAIN",
-    speciality: false
-  }
-];
-
 
 export {
     svgMore,
@@ -773,7 +671,6 @@ export {
     svgLeaf,
     svgHeart,
     svgAdd,
-    menuList,
     svgFacebook,
     svgInstagram,
     svgWhatsapp,

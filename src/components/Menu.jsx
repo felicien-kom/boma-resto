@@ -1,7 +1,15 @@
 import { useEffect, useState } from "react";
-import { menuList } from "../content/elements";
 import Card from "./Card";
 import { useLang } from "../App";
+import image1 from "../assets/images/ndole.jpg";
+import image2 from "../assets/images/poulet-dg.jpg";
+import image3 from "../assets/images/eru.jpg";
+import image4 from "../assets/images/beignets.jpg";
+import image5 from "../assets/images/brochettes.jpg";
+import image6 from "../assets/images/plantains.jpg";
+import image7 from "../assets/images/gateau-banane.jpg";
+import image8 from "../assets/images/bissap.jpg";
+import image9 from "../assets/images/koki.jpg";
 
 const dataMenu = {
     FR: {
@@ -21,6 +29,105 @@ const dataMenu = {
         dessert: "Desserts"
     }
 };
+
+const menuList = [
+  {
+    img: image1, title: { FR: "Ndolè", EN: "Ndolé" }, price: 2500, description: {
+      FR: "Plat riche aux arachides et aux épinards",
+      EN: "Rich dish with peanuts and spinach"
+    },
+    category: "MAIN",
+    speciality: true
+  },
+  {
+    img: image2,
+    title: { FR: "Poulet DG", EN: "DG Chicken" },
+    price: 3000,
+    description: {
+      FR: "Poulet aux légumes et plantains frits",
+      EN: "Chicken with vegetables and fried plantains"
+    },
+    category: "MAIN",
+    speciality: true
+  },
+  {
+    img: image3,
+    title: { FR: "Eru", EN: "Eru" },
+    price: 2800,
+    description: {
+      FR: "Soupe traditionnelle aux feuilles d'eru",
+      EN: "Traditional soup with eru leaves"
+    },
+    category: "MAIN",
+    speciality: false
+  },
+  {
+    img: image4,
+    title: { FR: "Beignets Haricots", EN: "Bean Fritters" },
+    price: 500,
+    description: {
+      FR: "Beignets croustillants aux haricots",
+      EN: "Crispy bean fritters"
+    },
+    category: "STARTER",
+    speciality: false
+  },
+  {
+    img: image5,
+    title: { FR: "Brochettes de Boeuf", EN: "Beef Skewers" },
+    price: 1800,
+    description: {
+      FR: "Brochettes grillées aux épices locales",
+      EN: "Grilled skewers with local spices"
+    },
+    category: "MAIN",
+    speciality: false
+  },
+  {
+    img: image6,
+    title: { FR: "Plantain Frit", EN: "Fried Plantains" },
+    price: 800,
+    description: {
+      FR: "Plantains dorés et croustillants",
+      EN: "Golden and crispy plantains"
+    },
+    category: "STARTER",
+    speciality: false
+  },
+  {
+    img: image7,
+    title: { FR: "Gâteau à la Banane", EN: "Banana Cake" },
+    price: 1000,
+    description: {
+      FR: "Gâteau moelleux aux bananes locales",
+      EN: "Soft cake with local bananas"
+    },
+    category: "DESSERT",
+    speciality: false
+  },
+  {
+    img: image8,
+    title: { FR: "Bissap Frais", EN: "Fresh Bissap" },
+    price: 600,
+    description: {
+      FR: "Boisson rafraîchissante à l'hibiscus",
+      EN: "Refreshing hibiscus drink"
+    },
+    category: "DESSERT",
+    speciality: false
+  },
+  {
+    img: image9,
+    title: { FR: "Koki", EN: "Koki" },
+    price: 1500,
+    description: {
+      FR: "Gâteau de haricots cuit à la vapeur",
+      EN: "Steamed bean cake"
+    },
+    category: "MAIN",
+    speciality: false
+  }
+];
 
 function Menu() {
     const { lang } = useLang();

@@ -12,10 +12,6 @@ const dataCard = {
     }
 };
 
-function getImage(url) {
-    return "/src/assets/images/" + url;
-}
-
 function Card({ card }) {
     const { lang } = useLang();
     const data = dataCard[lang];
@@ -26,7 +22,7 @@ function Card({ card }) {
                 <div className="speciality">{data.speciality}</div>
             )}
             <div className="card-banner">
-                <img src={getImage(card.img)} alt={card.title[lang]} />
+                <img src={card.img} alt={card.title[lang]} />
             </div>
             <div className="card-details">
                 <div className="card-title-price">
